@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f6f6f6; /* Light Gray */
+    line-height: 1.5; /* Line height for body text */
+}
+
+header {
+    background: #003285; /* Dark Blue */
+    color: white;
+    padding: 1rem 0;
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff5500; /* Orange */
+}
+
+.logo img {
+    max-width: 200px; /* Adjust the size as needed */
+    max-height: 100px;
+    /* border: red solid 3px; */
+}
+
+.hero {
+    height: 100vh;
+    background: url('designer.png') no-repeat center center/cover;
+    position: relative; /* Make it a positioning context */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; /* White Text */
+    padding: 0 2rem;
+}
+
+/* Overlay */
+.hero-overlay {
+    content: "";
+    position: absolute;
+    top: 50%; /* Position it in the center */
+    left: 50%; /* Position it in the center */
+    transform: translate(-50%, -50%); /* Center it precisely */
+    width: 80%; /* Adjust the width of the overlay */
+    height: 60%; /* Adjust the height of the overlay */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent gray overlay */
+    z-index: 1; /* Ensure it's below the text */
+}
+
+.hero h1,
+.hero p,
+.hero .btn {
+    position: relative; /* Ensure the text and button stay on top */
+    z-index: 2; /* Ensure the text and button stay on top */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.hero .btn {
+    background: #FF7F3E; /* Orange */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #f36100; /* Light Yellow */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        padding: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .hero-content {
+        padding: 0 1rem; /* Adjust content padding for smaller screens */
+    }
+}
+
+
+.hero .btn:hover {
+    background: #f36100; /* Light Yellow */
+}
+
+.about, .process, .contact, .why-us {
+    padding: 4rem 2rem;
+    background-color: white; /* White background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.about p,
+.process p,
+.contact p,
+.why-us p {
+    line-height: 1.9; /* Line height for paragraphs in these sections */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #003285; /* Dark Blue */
+}
+
+.process-step {
+    margin-bottom: 2rem;
+}
+
+.process-step h3 {
+    font-size: 1.5rem;
+    color: #003285; /* Dark Blue */
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contact-form {
+    border: 2px solid #ccc; /* Gray */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+.contact label {
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact .btn {
+    align-self: flex-start;
+    background: #FF7F3E; /* Orange */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.contact .btn:hover {
+    background: #e77102; /* Light Yellow */
+}
+
+footer {
+    background: #003285; /* Dark Blue */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+table.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.comparison-table th {
+    background-color: #003285; /* Dark Blue */
+    color: white;
+}
+
+.comparison-table td {
+    background-color: white; /* White background */
+}
+.comparison-table td span {
+    color: #ff5500;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        padding: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .hero-content {
+        padding: 0 1rem; /* Adjust content padding for smaller screens */
+    }
+}
