@@ -229,11 +229,22 @@ table.comparison-table {
         margin-bottom: 0.5rem;
     }
 
-    
-    
     .hero-content {
         padding: 0 1rem; /* Adjust content padding for smaller screens */
     }
+    /* Overlay */
+    .hero-overlay {
+        content: "";
+        position: absolute;
+        top: 50%; /* Position it in the center */
+        left: 50%; /* Position it in the center */
+        transform: translate(-50%, -50%); /* Center it precisely */
+        min-width: 90%; /* Adjust the width of the overlay */
+        height: 60%; /* Adjust the height of the overlay */
+        background-color: rgba(196, 6, 6, 0.5); /* Semi-transparent gray overlay */
+        z-index: 1; /* Ensure it's below the text */
+    }
+
 }
 
 
