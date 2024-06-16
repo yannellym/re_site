@@ -10,7 +10,6 @@ header {
     background: #003285; /* Dark Blue */
     color: white;
     padding: 1rem 0;
-    /* position: fixed; */
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -24,9 +23,9 @@ nav {
     padding: 0 2rem;
 }
 
-nav .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+nav .logo img {
+    max-width: 200px;
+    max-height: 100px;
 }
 
 nav ul {
@@ -47,13 +46,23 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff5500; /* Orange */
+    color: #ff5500;
+}
+
+.nav-links li {
+    width: 100%;
+    text-align: center;
+}
+
+.nav-links li a {
+    display: block;
+    padding: 1rem 0;
+    width: 100%;
 }
 
 .logo img {
     max-width: 200px; /* Adjust the size as needed */
     max-height: 100px;
-    /* border: red solid 3px; */
 }
 
 .hero {
@@ -214,42 +223,44 @@ table.comparison-table {
 }
 
 
-/* Responsive adjustments */
-@media (max-width: 425px) {
-    .hero {
-        padding: 1rem;
+@media (max-width: 767px) {
+    .hamburger-checkbox {
+        display: none;
+    }
+    
+    .hamburger {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 25px;
+        padding: 5px;
+    }
+    
+    .hamburger span {
+        background-color: #fff;
+        height: 3px;
+        width: 100%;
+        display: block;
+    }
+    
+    .nav-links {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-links li {
+        margin: 0 10px;
+    }
+    
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
     }
 
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero-text p {
-        font-size: 15px;
-        margin-bottom: 0.5rem;
-    }
-
-    .hero-content {
-        padding: 0 1rem; /* Adjust content padding for smaller screens */
-    }
-    /* Overlay */
-    .hero-overlay {
-        content: "";
-        position: absolute;
-        top: 50%; /* Position it in the center */
-        left: 50%; /* Position it in the center */
-        transform: translate(-50%, -50%); /* Center it precisely */
-        min-width: 90%; /* Adjust the width of the overlay */
-        height: 60%; /* Adjust the height of the overlay */
-        background-color: rgba(196, 6, 6, 0.5); /* Semi-transparent gray overlay */
-        z-index: 1; /* Ensure it's below the text */
-    }
-
-}
-
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
     .hero {
         padding: 1rem;
     }
@@ -262,8 +273,17 @@ table.comparison-table {
         font-size: 1rem;
         margin-bottom: 0.5rem;
     }
-    
+
     .hero-content {
-        padding: 0 1rem; /* Adjust content padding for smaller screens */
+        padding: 0 1rem;
     }
 }
+
+
+@media (min-width: 768px) {
+    .hamburger-checkbox {
+        display: none;
+    }
+    
+}
+
