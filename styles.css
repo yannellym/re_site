@@ -52,7 +52,7 @@ nav {
 }
 
 .nav-links li a:hover {
-    color: #ffd816;
+    color: #ff5500;
 }
 
 .mobile-nav-links {
@@ -313,7 +313,7 @@ table.comparison-table {
         position: absolute;
         top: 60px; /* Adjust based on your header height */
         right: 10px;
-        background-color: #003285;
+        background-color: #020202;
         width: 150px;
         padding-bottom: 3%;
         border-radius: 5px;
