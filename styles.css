@@ -307,6 +307,10 @@ table.comparison-table {
 
 /* Mobile Navigation */
 @media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
