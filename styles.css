@@ -370,7 +370,9 @@ table.comparison-table {
 
 @media (max-width: 425px) {
     .hero {
-        padding: 2rem;
+        background-attachment: scroll; /* Disable parallax on mobile for better performance */
+        background-size: cover; /* Cover the screen */
+        background-position: center; /* Center the background image */
     }
 
     .hero h1 {
