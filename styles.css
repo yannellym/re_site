@@ -366,6 +366,9 @@ table.comparison-table {
     .hero-content {
         padding: 0 1rem;
     }
+    .hero-overlay {
+        min-width: 90%;
+    }
 }
 
 @media (max-width: 425px) {
