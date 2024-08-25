@@ -22,6 +22,16 @@ nav {
     align-items: center;
     padding: 0 2rem;
 }
+.logo {
+    display: flex;
+    align-items: center; /* Aligns the text vertically center with the logo */
+}
+.logo p {
+    margin: 0; /
+    font-size: 1.2em;
+    font-weight: bolder; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 .logo img {
     max-width: 200px;
